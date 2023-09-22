@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealEstateFakeApp.MainPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto,*">
+            <Image Grid.Row="0" Source="room" HeightRequest="390"  Margin="0,-50,0,0" Aspect="AspectFill"/>
+            <Button Grid.Row="0" Text="FEATURED" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Small" TextColor="White" HeightRequest="36" CornerRadius="25" BackgroundColor="LimeGreen" Margin="10,20,0,0"/>
+            <Button Grid.Row="0" ImageSource="heart" Margin="0,20,10,0" Style="{DynamicResource MediaButtons}"/>
+            <Button Grid.Row="0" ImageSource="share" Margin="0,60,10,0" Style="{DynamicResource MediaButtons}"/>
+            <Button Grid.Row="0" Text="14 | 360" VerticalOptions="End" HorizontalOptions="End" FontSize="Small" TextColor="White" HeightRequest="36" WidthRequest="120" Opacity="0.8" CornerRadius="20" BackgroundColor="#6E7079" Margin="0,0,10,60"/>
+            <Frame Grid.Row="1" CornerRadius="35" BackgroundColor="White" BorderColor="Transparent" Padding="20,10" Margin="0,-36,0,0" HasShadow="False" VerticalOptions="FillAndExpand">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" RowSpacing="10" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" Padding="10" Margin="0,30,0,0" ColumnSpacing="5">
+                    <!-- Title-->
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Text="Exclusive, services, all bills &#10;included. City View" FontSize="Title" FontAttributes="Bold" Padding="0,0,0,20"/>
+                    
+                    <!-- Feature controls-->
+                    <Image Grid.Row="1" Grid.Column="0" Source="beds" Style="{StaticResource FeatureControlImage}"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="2 beds" Style="{DynamicResource LabelFeaturedControls}"/>
+                    
+                    <Image Grid.Row="1" Grid.Column="2" Source="baths" Style="{StaticResource FeatureControlImage}"/>
+                    <Label Grid.Row="1" Grid.Column="3" Text="2 baths" Style="{DynamicResource LabelFeaturedControls}"/>
+                    
+                    <Image Grid.Row="1" Grid.Column="4" Source="sqfts" Style="{StaticResource FeatureControlImage}"/>
+                    <Label Grid.Row="1" Grid.Column="5" Text="2005 sqfts" Style="{DynamicResource LabelFeaturedControls}"/>
+                    <!-- Description-->
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" TextColor="DarkGray" FontSize="15"  LineHeight="1.5" Text="Project Villa El Salvador is located in JI. Pantai&#10;Pererenan which is a charming seaside village &#10;offering a picturesque mix of green rice fields&#10;and great surf spots with the famous beach."/>
+                    <Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="6"  BorderColor="Transparent" HeightRequest="80" HasShadow="False" CornerRadius="10" BackgroundColor="WhiteSmoke" Margin="0,20">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,*" VerticalOptions="Center">
+                            <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"  HeightRequest="60" WidthRequest="60" Source="user" Margin="0,0,20,0"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Esther Howard" VerticalTextAlignment="End" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="Betterhomes Real Estate" TextColor="#797a87" />
+                        </Grid>
+                    </Frame>
+                    <!-- Price & Message-->
+                    <Label Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="2" FontSize="25" Text="$449,790" VerticalTextAlignment="Center"/>
+                    <Button Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" BackgroundColor="#7655f2" CornerRadius="28" WidthRequest="180" HeightRequest="55" TextColor="White" Text="Message"/>
+
+                </Grid>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>
+
